@@ -4,7 +4,7 @@ function Adventures() {
   let [adventure, setAdventure] = useState(null);
 
       function fetchData() {
-        let apiurl = "http://localhost:1337/api/adventures?populate=*";
+        let apiurl = "https://movierank-api.onrender.com/api/adventures?populate=*";
         fetch(apiurl)
         .then((response) => {
           return response.json();
@@ -26,7 +26,7 @@ function Adventures() {
           return(
             <div key={d.id} className="md:w-[258px] md:m-0 m-auto w-[90%]">
                 <div className="hub-movie-poster-wrap">
-                  <img src={`http://localhost:1337${d.attributes.poster.data.attributes.url}`} alt="The Hunt Poster"/>
+                  <img src={`https://movierank-api.onrender.com${d.attributes.poster.data.attributes.url}`} alt="The Hunt Poster"/>
                   <div className=" p-2 border-2 border-[#2FC4EC]">
                     <div className='font-bold leading-4'>{d.attributes.title}</div>
                   </div>

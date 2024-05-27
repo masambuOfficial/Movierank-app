@@ -8,8 +8,8 @@ function Action() {
   return (
     <>
     <NavBar />
-    <section className=" w-full pt-16 bg-gray-500">
-        <div className='max-w-[1100px] m-auto py-10 '>
+    <section className=" w-full pt-16 bg-gray-300">
+        <div className='max-w-[1100px] m-auto py-10 text-[#2e2e2e] '>
             <Link to={'/'} className='underline'>Home</Link> <span>{`>`}</span> <span>Action</span>
         </div>
     </section>

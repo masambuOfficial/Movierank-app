@@ -10,7 +10,7 @@
     font-family: 'Poppins';
 }
 .heroImage{
-    background-image: url(/src/assets/shuri-black-panther-2.jpg);
+    background-image: url(/shuri-black-panther-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

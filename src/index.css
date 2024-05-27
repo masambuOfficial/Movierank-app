@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+.heroImage{
+    background-image: url(/src/assets/shuri-black-panther-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    height: 95%;
+}
+.btn a{
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background-color: #2FC4EC;
+    color: white;
+}
+.btn a:hover{
+    background: none;
+    border: 2px solid #2FC4EC;
+    color: #2FC4EC;
+}
+
+ /* The container <div> - needed to position the dropdown content */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    padding-left: 7px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    color: black;
+    padding: 10px 40px;
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+        height: 270px;
+        overflow-y: scroll;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #ccc;
+    }
+    .dropdown_menu{
+        display: none;
+    }
